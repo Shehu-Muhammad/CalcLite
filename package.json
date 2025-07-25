@@ -1,0 +1,21 @@
+{
+  "name": "calclite",
+  "version": "1.0.0",
+  "description": "CalcLite is a simple command-line calculator built with Node.js. It supports basic arithmetic expressions using +, -, *, and /.",
+  "main": "calc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node calc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shehu-Muhammad/CalcLite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shehu-Muhammad/CalcLite/issues"
+  },
+  "homepage": "https://github.com/Shehu-Muhammad/CalcLite#readme"
+}
