@@ -20,7 +20,30 @@ npm init -y
 ### 3. Run a calculation
 ```bash
 node calc.js "2 + 3 * 4"
-# Output: 14
+# Output:
+# Answer: 2 + 3 * 4 = 14
+```
+
+### 💻 REPL Mode (Interactive)
+You can also run CalcLite in interactive REPL mode, which allows you to enter multiple math expressions line-by-line.
+
+🔁 Start REPL mode:
+```bash
+node calc.js
+```
+You’ll see:
+```shell
+Calc>
+```
+Now enter an expression like:
+```shell
+Calc> 10 / 2 + 3
+Answer: 10 / 2 + 3 = 8
+```
+Type exit to quit:
+```shell
+Calc> exit
+Exiting...
 ```
 
 ## 🔧 Optional Setup
@@ -43,7 +66,8 @@ npm start -- "5 * (10 - 6)"
 ### 📝 Features
 - Basic math: +, -, *, /
 - Accepts expression as a string input
-- (Coming Soon) REPL mode and history log
+- REPL mode for interactive calculations
+- (Coming Soon) history log
 
 ### 📦 Dependencies
 - **None** – pure Node.js
