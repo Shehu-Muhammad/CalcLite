@@ -2,6 +2,8 @@
 
 CalcLite is a simple command-line calculator built with Node.js. It supports basic arithmetic expressions using +, -, *, and /.
 
+> ⚠️ **Note:** This project uses ES modules (`.mjs` files and `"type": "module"` in `package.json`).  
+> Requires **Node.js version 12 or higher**.
 ---
 
 ## 🚀 Getting Started
@@ -19,7 +21,14 @@ npm init -y
 
 ### 3. Run a calculation
 ```bash
-node calc.js "2 + 3 * 4"
+node calc.mjs "2 + 3 * 4"
+# Output:
+# Answer: 2 + 3 * 4 = 14
+```
+
+Or you can run:
+```bash
+node calc.mjs 2 + 3 * 4
 # Output:
 # Answer: 2 + 3 * 4 = 14
 ```
@@ -29,7 +38,7 @@ You can also run CalcLite in interactive REPL mode, which allows you to enter mu
 
 🔁 Start REPL mode:
 ```bash
-node calc.js
+node calc.mjs
 ```
 You’ll see:
 ```shell
@@ -54,13 +63,34 @@ To add a script shortcut:
 2. Add:
 ```json
 "scripts": {
-  "start": "node calc.js"
+  "start": "node calc.mjs",
+  "test" : "node test/evaluate.test.js"
 }
 ```
 
 Then run:
 ```bash
 npm start -- "5 * (10 - 6)"
+```
+
+## 🧪 Running Tests
+
+This project includes unit tests in the file `test/evaluate.test.js` to ensure core functions work correctly.
+
+To run tests, simply execute:
+
+```bash
+npm test
+```
+
+Or run the test file directly:
+```bash
+node test/evaluate.test.js
+```
+
+If all tests pass, you’ll see:
+```shell
+All tests passed!
 ```
 
 ### 📝 Features
@@ -78,7 +108,6 @@ MIT
 
 ---
 
-Would you like me to generate the starter `calc.js` file that works with this README?
 
 
 

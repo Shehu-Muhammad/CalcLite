@@ -6,10 +6,9 @@
  */
 function evaluateInput(input) {
     try {
-        const result = Function(`"use strict"; return (${input})`)();
-        console.log(`Answer: ${input} = ${result}`);
+        return Function(`'use strict'; return (${input})`)();;
     } catch (error) {
-        throw new Error("Invalid expression.");
+        throw new Error('Invalid expression.');
     }
 }
 

@@ -20,7 +20,7 @@ function checkAllowedCharacters(input) {
     const allowed = /^[0-9+\-*/().\s]+$/;
 
     if (!allowed.test(input)) {
-        throw new Error("Expression contains invalid characters.");
+        throw new Error('Expression contains invalid characters.');
     }
 }
 

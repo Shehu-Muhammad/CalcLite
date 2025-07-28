@@ -7,10 +7,8 @@ import readline from 'readline';
  *
  * @returns {boolean} True if no expression was passed via CLI.
  */
-function checkForReplMode() {
-    if (process.argv.length <= 2) {
-        return true;
-    }
+function checkForReplMode(argv = process.argv) {
+    return argv.length <= 2;
 }
 
 /**
@@ -33,7 +31,8 @@ function replMode() {
         try {
             checkInput(line);
             checkAllowedCharacters(line);
-            evaluateInput(line);
+            const result = evaluateInput(line);
+            console.log(`Answer: ${line} = ${result}`)
         } catch (err) {
             console.error(err.message);
         }
