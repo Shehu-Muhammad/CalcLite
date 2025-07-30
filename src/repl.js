@@ -1,5 +1,7 @@
 import { checkInput, checkAllowedCharacters } from './validate.js';
 import { evaluateInput } from './evaluate.js';
+import { getDate } from './getDate.js';
+import { logHistory } from './logHistory.js';
 import readline from 'readline';
 
 /**
@@ -21,6 +23,7 @@ function replMode() {
     output: process.stdout,
     prompt: 'Calc> '
     });
+    const date = getDate();
 
     rl.prompt();
 
@@ -32,9 +35,13 @@ function replMode() {
             checkInput(line);
             checkAllowedCharacters(line);
             const result = evaluateInput(line);
-            console.log(`Answer: ${line} = ${result}`)
+            const logEntry = `[${date}] Answer: ${line} = ${result}`;
+            logHistory(logEntry);
+            console.log(logEntry)
         } catch (err) {
-            console.error(err.message);
+            const logEntry = `[${date}] Error: ${err.message}`;
+            logHistory(logEntry);
+            console.error(logEntry);
         }
         rl.prompt();
     }).on('close', () => {
