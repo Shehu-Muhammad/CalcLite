@@ -26,13 +26,6 @@ node calc.mjs "2 + 3 * 4"
 # Answer: 2 + 3 * 4 = 14
 ```
 
-Or you can run:
-```bash
-node calc.mjs 2 + 3 * 4
-# Output:
-# Answer: 2 + 3 * 4 = 14
-```
-
 ### 💻 REPL Mode (Interactive)
 You can also run CalcLite in interactive REPL mode, which allows you to enter multiple math expressions line-by-line.
 

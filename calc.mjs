@@ -3,6 +3,7 @@ import { checkInput, checkAllowedCharacters } from './src/validate.js';
 import { evaluateInput } from './src/evaluate.js';
 import { getDate } from './src/getDate.js';
 import { logHistory } from './src/logHistory.js';
+import { showHistory, checkForHistoryFlag } from './src/showHistory.js';
 
 // Collect all args from index 2
 let input = process.argv.slice(2).join(' ');
@@ -10,7 +11,12 @@ let input = process.argv.slice(2).join(' ');
 (function main() {
     const repl_mode = checkForReplMode();
     const date = getDate();
-    if (repl_mode) {
+    const historyFlag = checkForHistoryFlag();
+    console.log(historyFlag)
+    if (historyFlag) {
+        showHistory();
+    }
+    else if (repl_mode) {
         replMode()
     } else {
         try {
