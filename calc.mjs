@@ -12,7 +12,6 @@ let input = process.argv.slice(2).join(' ');
     const repl_mode = checkForReplMode();
     const date = getDate();
     const historyFlag = checkForHistoryFlag();
-    console.log(historyFlag)
     if (historyFlag) {
         showHistory();
     }
