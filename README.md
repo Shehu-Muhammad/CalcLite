@@ -11,6 +11,7 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 - [🚀 Getting Started](#-getting-started)
 - [💻 REPL Mode (Interactive)](#-repl-mode-interactive)
 - [🔍 View History](#-view-history)
+- [🧽 Clear History](#-clear-history)
 - [⚙️ Optional Scripts](#️-optional-scripts)
 - [🧪 Tests](#-tests)
 - [🔢 Features](#-features)
@@ -72,13 +73,13 @@ Exiting...
 
 ---
 
-### 🔍 View History
-You can see the last 100 expressions that you entered, including results and errors.
+### 🔍 View & Clear History
+CalcLite stores the last 100 calculations with timestamps and any errors encountered.
 Note: History shows up to the last 100 entries with timestamps.
 ```bash
 node calc.mjs --history
 ```
-You'll see something similar to this:
+Example output:
 ```shell
 📜 History:
 1: [2025-07-29 19:16:44] Answer: 3 * 2 = 6
@@ -87,13 +88,33 @@ You'll see something similar to this:
 4: [2025-07-29 19:24:22] Answer: 5 * 9 = 45
 5: [2025-07-29 19:35:52] Error: Expression contains invalid characters.
 ```
-Alternatively, if you add the history script to your `package.json`, you can simply run:
+If you’ve added the script to your package.json, you can simply run:
 ```bash
 npm run history
 ```
 
 ---
 
+### 🧹 Clear History
+To clear the history log (this action is irreversible), use either:
+
+```bash
+node calc.mjs --clear
+# or
+node calc.mjs --clear-history
+```
+You'll see:
+```shell
+✅ History cleared successfully.
+```
+
+If you've added the script:
+
+```bash
+npm run clear
+```
+
+---
 
 ### ⚙️ Optional Scripts
 To add script shortcuts:
@@ -105,17 +126,20 @@ To add script shortcuts:
 "scripts": {
   "start": "node calc.mjs",
   "test" : "node test/evaluate.test.js",
-  "history": "node calc.mjs --history"
+  "history": "node calc.mjs --history",
+  "clear": "node calc.mjs --clear"
 }
 ```
 
-You can run an expression from terminal like:
-```bash
-npm start -- "5 * (10 - 6)"
-```
+Then use:
+
+| Action            | Command                       |
+| ----------------- | ----------------------------- |
+| Run a calculation | `npm start -- "5 * (10 - 6)"` |
+| View history      | `npm run history`             |
+| Clear history     | `npm run clear`               |
 
 ---
-
 
 ### 🧪 Tests
 

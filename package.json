@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node test/evaluate.test.js",
     "start": "node calc.mjs",
-    "history": "node calc.mjs --history"
+    "history": "node calc.mjs --history",
+    "clear": "node calc.mjs --clear"
   },
   "repository": {
     "type": "git",

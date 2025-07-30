@@ -4,6 +4,7 @@ import { evaluateInput } from './src/evaluate.js';
 import { getDate } from './src/getDate.js';
 import { logHistory } from './src/logHistory.js';
 import { showHistory, checkForHistoryFlag } from './src/showHistory.js';
+import { checkForClearHistoryFlag, clearHistory } from './src/clearHistory.js';
 
 // Collect all args from index 2
 let input = process.argv.slice(2).join(' ');
@@ -12,8 +13,11 @@ let input = process.argv.slice(2).join(' ');
     const repl_mode = checkForReplMode();
     const date = getDate();
     const historyFlag = checkForHistoryFlag();
+    const clearFlag = checkForClearHistoryFlag();
     if (historyFlag) {
         showHistory();
+    } else if (clearFlag) {
+        clearHistory();
     }
     else if (repl_mode) {
         replMode()
