@@ -10,7 +10,7 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 ### 📚 Table of Contents
 - [🚀 Getting Started](#-getting-started)
 - [💻 REPL Mode (Interactive)](#-repl-mode-interactive)
-- [🔍 View History](#-view-history)
+- [🔍 View History & Clear History](#-view--clear-history)
 - [🧽 Clear History](#-clear-history)
 - [⚙️ Optional Scripts](#️-optional-scripts)
 - [🧪 Tests](#-tests)
