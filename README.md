@@ -1,6 +1,6 @@
 # 🧮 CalcLite – Command Line Calculator
 
-CalcLite is a simple command-line calculator built with Node.js. It supports basic arithmetic expressions using +, -, *, and /.
+CalcLite is a simple command-line calculator built with Node.js. It supports basic arithmetic expressions using +, -, \*, and /.
 
 > ⚠️ **Note:** This project uses ES modules (`.mjs` files and `"type": "module"` in `package.json`).  
 > Requires **Node.js version 12 or higher**.
@@ -8,6 +8,7 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 ---
 
 ### 📚 Table of Contents
+
 - [🚀 Getting Started](#-getting-started)
 - [💻 REPL Mode (Interactive)](#-repl-mode-interactive)
 - [🔍 View History & Clear History](#-view--clear-history)
@@ -23,24 +24,28 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 ### 🚀 Getting Started
 
 1. Clone the repo
+
 ```bash
 git clone https://github.com/shehu-muhammad/CalcLite.git
 cd CalcLite
 ```
 
 2. Initialize the project
+
 ```bash
 npm init -y
 ```
 
 3. Verify Node.js version
+
 ```shell
 node -v
 # Should output v12.0.0 or higher
 ```
 
 4. Run a calculation
-(Quotes are important to avoid shell misinterpretation.)
+   (Quotes are important to avoid shell misinterpretation.)
+
 ```bash
 node calc.mjs "2 + 3 * 4"
 # Output:
@@ -50,22 +55,30 @@ node calc.mjs "2 + 3 * 4"
 ---
 
 ### 💻 REPL Mode (Interactive)
+
 You can also run CalcLite in interactive REPL mode, which allows you to enter multiple math expressions, one per line.
 
 🔁 Start REPL mode:
+
 ```bash
 node calc.mjs
 ```
+
 You’ll see:
+
 ```shell
 Calc>
 ```
+
 Now enter an expression like:
+
 ```shell
 Calc> 10 / 2 + 3
 Answer: 10 / 2 + 3 = 8
 ```
+
 Type exit to quit:
+
 ```shell
 Calc> exit
 Exiting...
@@ -74,12 +87,16 @@ Exiting...
 ---
 
 ### 🔍 View & Clear History
+
 CalcLite stores the last 100 calculations with timestamps and any errors encountered.
 Note: History shows up to the last 100 entries with timestamps.
+
 ```bash
 node calc.mjs --history
 ```
+
 Example output:
+
 ```shell
 📜 History:
 1: [2025-07-29 19:16:44] Answer: 3 * 2 = 6
@@ -88,7 +105,9 @@ Example output:
 4: [2025-07-29 19:24:22] Answer: 5 * 9 = 45
 5: [2025-07-29 19:35:52] Error: Expression contains invalid characters.
 ```
+
 If you’ve added the script to your package.json, you can simply run:
+
 ```bash
 npm run history
 ```
@@ -96,6 +115,7 @@ npm run history
 ---
 
 ### 🧹 Clear History
+
 To clear the history log (this action is irreversible), use either:
 
 ```bash
@@ -103,7 +123,9 @@ node calc.mjs --clear
 # or
 node calc.mjs --clear-history
 ```
+
 You'll see:
+
 ```shell
 ✅ History cleared successfully.
 ```
@@ -117,11 +139,13 @@ npm run clear
 ---
 
 ### ⚙️ Optional Scripts
+
 To add script shortcuts:
 
 1. Open `package.json`
 
 2. Add the following under `"scripts"`:
+
 ```json
 "scripts": {
   "start": "node calc.mjs",
@@ -152,31 +176,30 @@ npm test
 ```
 
 Or run the test file directly:
+
 ```bash
 node test/evaluate.test.js
 ```
 
 If all tests pass, you’ll see:
+
 ```shell
 All tests passed!
 ```
 
 ---
 
-
 ### 🔢 Features
-- Basic Math: +, -, *, /
+
+- Basic Math: +, -, \*, /
 - String Input Support
 - Interactive REPL Mode
 - Persistent History Log
 
 ### 📦 Dependencies
+
 - **None** – pure Node.js
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
-
-
-
-
