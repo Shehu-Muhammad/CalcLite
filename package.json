@@ -5,6 +5,8 @@
   "main": "calc.mjs",
   "type": "module",
   "scripts": {
+    "format": "prettier --check .",
+    "lint": "eslint .",
     "test": "node test/evaluate.test.js",
     "start": "node calc.mjs",
     "history": "node calc.mjs --history",
@@ -20,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/Shehu-Muhammad/CalcLite/issues"
   },
-  "homepage": "https://github.com/Shehu-Muhammad/CalcLite#readme"
+  "homepage": "https://github.com/Shehu-Muhammad/CalcLite#readme",
+  "devDependencies": {
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2"
+  }
 }
