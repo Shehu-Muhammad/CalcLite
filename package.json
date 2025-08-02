@@ -5,8 +5,11 @@
   "main": "calc.mjs",
   "type": "module",
   "scripts": {
-    "format": "prettier --check .",
+    "format": "prettier .",
+    "format:fix": "prettier . --write",
+    "format:check": "prettier . --check",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "node test/evaluate.test.js",
     "start": "node calc.mjs",
     "history": "node calc.mjs --history",
