@@ -12,9 +12,9 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 - [🚀 Getting Started](#-getting-started)
 - [💻 REPL Mode (Interactive)](#-repl-mode-interactive)
 - [🔍 View History & Clear History](#-view--clear-history)
-- [🧽 Clear History](#-clear-history)
 - [⚙️ Optional Scripts](#️-optional-scripts)
 - [🧪 Tests](#-tests)
+- [🛠️ Development Tools](#️-development-tools)
 - [🔢 Features](#-features)
 - [📦 Dependencies](#-dependencies)
 - [📄 License](#-license)
@@ -186,6 +186,22 @@ If all tests pass, you’ll see:
 ```shell
 All tests passed!
 ```
+
+---
+
+### 🛠️ Development Tools
+
+This project uses the following tools to maintain code quality and consistency:
+
+- **[Prettier](https://prettier.io/)** – Code formatter  
+  - Check formatting: `npm run format:check`  
+  - Auto-fix formatting: `npm run format:fix`
+
+- **[ESLint](https://eslint.org/)** – JavaScript linter  
+  - Run lint checks: `npm run lint`  
+  - Auto-fix lint issues: `npm run lint:fix`
+
+Both tools run automatically in GitHub Actions as part of the CI pipeline.
 
 ---
 
