@@ -193,12 +193,12 @@ All tests passed!
 
 This project uses the following tools to maintain code quality and consistency:
 
-- **[Prettier](https://prettier.io/)** – Code formatter  
-  - Check formatting: `npm run format:check`  
+- **[Prettier](https://prettier.io/)** – Code formatter
+  - Check formatting: `npm run format:check`
   - Auto-fix formatting: `npm run format:fix`
 
-- **[ESLint](https://eslint.org/)** – JavaScript linter  
-  - Run lint checks: `npm run lint`  
+- **[ESLint](https://eslint.org/)** – JavaScript linter
+  - Run lint checks: `npm run lint`
   - Auto-fix lint issues: `npm run lint:fix`
 
 Both tools run automatically in GitHub Actions as part of the CI pipeline.
