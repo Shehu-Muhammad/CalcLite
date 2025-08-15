@@ -216,6 +216,8 @@ Both tools run automatically in GitHub Actions as part of the CI pipeline.
 
 - **None** – pure Node.js
 
+## License
+
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ---
