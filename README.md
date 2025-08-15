@@ -9,15 +9,15 @@ CalcLite is a simple command-line calculator built with Node.js. It supports bas
 
 ### 📚 Table of Contents
 
-- [🚀 Getting Started](#-getting-started)
-- [💻 REPL Mode (Interactive)](#-repl-mode-interactive)
-- [🔍 View History & Clear History](#-view--clear-history)
-- [⚙️ Optional Scripts](#️-optional-scripts)
-- [🧪 Tests](#-tests)
-- [🛠️ Development Tools](#️-development-tools)
-- [🔢 Features](#-features)
-- [📦 Dependencies](#-dependencies)
-- [📄 License](#-license)
+- [🚀 Getting Started](#getting-started)
+- [💻 REPL Mode (Interactive)](#repl-mode-interactive)
+- [🔍 View History & Clear History](#view--clear-history)
+- [⚙️ Optional Scripts](#️optional-scripts)
+- [🧪 Tests](#tests)
+- [🛠️ Development Tools](#️development-tools)
+- [🔢 Features](#features)
+- [📦 Dependencies](#dependencies)
+- [📄 License](#license)
 
 ---
 
